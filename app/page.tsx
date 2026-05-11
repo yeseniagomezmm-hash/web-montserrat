@@ -1,254 +1,404 @@
-export default function GerontologiaLandingPage() {
+export default function Page() {
+  const areas = [
+    {
+      title: "Orientación y acompañamiento",
+      text: "Acompañamiento gerontológico para personas y familias enfocado en bienestar, autonomía y calidad de vida.",
+    },
+    {
+      title: "Proyectos y estrategias",
+      text: "Desarrollo de iniciativas relacionadas con accesibilidad, participación y cultura de la longevidad.",
+    },
+    {
+      title: "Formación y fortalecimiento institucional",
+      text: "Capacitación y acompañamiento para instituciones y espacios comunitarios.",
+    },
+  ];
+
+  const topics = [
+    "Participación social",
+    "Accesibilidad",
+    "Cultura de la longevidad",
+    "Intergeneracionalidad",
+    "Bienestar",
+    "Entornos amigables",
+    "Estrategias comunitarias",
+    "Políticas públicas",
+  ];
+
   return (
-    <div className="min-h-screen bg-white text-neutral-900">
+    <main className="min-h-screen bg-[#F5F1EB] text-[#2B2B2B] overflow-hidden">
+
       {/* HERO */}
-      <section className="px-6 py-20 md:px-16 lg:px-24 bg-neutral-100">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <p className="uppercase tracking-[0.2em] text-sm text-neutral-500 mb-4">
-              Gerontología • Acompañamiento • Bienestar
+      <section className="bg-[#F5F1EB] px-6 py-28 md:px-14 lg:px-24">
+
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-14 lg:gap-20 items-center">
+
+          {/* CONTENIDO */}
+          <div className="max-w-3xl">
+
+            <p className="uppercase tracking-[0.16em] text-[11px] text-[#8A847C] mb-7 font-medium">
+              Longevidad · Bienestar · Participación
             </p>
 
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
-              Acompañamiento gerontológico para vivir y envejecer mejor.
+            <h1
+              className="text-[50px] md:text-[78px] leading-[1.1] tracking-[-0.025em] text-[#2B2B2B] mb-8"
+              style={{
+                fontFamily: "Cormorant Garamond, serif",
+                fontWeight: 600,
+              }}
+            >
+              Envejecimiento, bienestar y participación.
             </h1>
 
-            <p className="text-lg text-neutral-700 mb-8 leading-relaxed">
-              Orientación profesional para familias, personas adultas mayores,
-              centros y profesionales interesados en promover un envejecimiento
-              digno, saludable y con calidad de vida.
+            <p className="text-[18px] leading-[1.58] text-[#5B5751] max-w-2xl mb-11">
+              Gerontología, orientación y acompañamiento para personas,
+              familias y proyectos enfocados en bienestar, accesibilidad
+              y participación.
             </p>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-3">
+
               <a
-                href="https://wa.me/523332547567"
-                className="bg-black text-white px-6 py-3 rounded-2xl text-base font-medium hover:opacity-90 transition"
+                href="#contacto"
+                className="bg-[#5E6B57] text-white px-8 py-4 rounded-full text-[14px] font-medium tracking-wide transition hover:opacity-90"
+                style={{ fontFamily: "Inter, sans-serif" }}
               >
-                Solicitar información
+                Contacto
               </a>
 
               <a
-                href="#servicios"
-                className="border border-black px-6 py-3 rounded-2xl text-base font-medium hover:bg-black hover:text-white transition"
+                href="#areas"
+                className="border border-[#D5CBC0] text-[#5B5751] px-8 py-4 rounded-full text-[14px] font-medium tracking-wide transition hover:bg-[#2B2B2B] hover:text-white"
+                style={{ fontFamily: "Inter, sans-serif" }}
               >
-                Ver servicios
+                Áreas de trabajo
               </a>
+
             </div>
+
           </div>
 
-          <div className="bg-white rounded-3xl shadow-xl p-8 border border-neutral-200">
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-xl font-semibold mb-2">
-                  Atención profesional con enfoque integral
-                </h3>
-                <p className="text-neutral-600">
-                  Evaluación, orientación e intervención desde una perspectiva
-                  biopsicosocial y basada en evidencia.
-                </p>
-              </div>
+          {/* FOTO */}
+          <div className="flex justify-center lg:justify-end">
 
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-neutral-100 rounded-2xl p-4">
-                  <p className="text-3xl font-bold">+100</p>
-                  <p className="text-sm text-neutral-600 mt-1">
-                    Personas acompañadas
-                  </p>
-                </div>
+            <div className="relative w-[290px] md:w-[360px]">
 
-                <div className="bg-neutral-100 rounded-2xl p-4">
-                  <p className="text-3xl font-bold">NL</p>
-                  <p className="text-sm text-neutral-600 mt-1">
-                    Nuevo León
-                  </p>
-                </div>
-              </div>
+              <div className="absolute inset-0 bg-[#E7DED3] rounded-[2.2rem] translate-x-4 translate-y-4"></div>
 
-              <div className="bg-neutral-900 text-white rounded-2xl p-5">
-                <p className="font-medium mb-1">
-                  Agenda una primera orientación
-                </p>
-                <p className="text-sm text-neutral-300">
-                  Modalidad virtual.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SERVICIOS */}
-      <section id="servicios" className="px-6 py-20 md:px-16 lg:px-24">
-        <div className="max-w-6xl mx-auto">
-          <div className="mb-14 text-center">
-            <h2 className="text-4xl font-bold mb-4">Servicios</h2>
-            <p className="text-neutral-600 max-w-2xl mx-auto">
-              Procesos adaptados a las necesidades de cada persona, familia o institución.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                title: "Valoración gerontológica integral",
-                text: "Evaluación física, emocional, social y funcional para identificar necesidades y fortalecer bienestar y autonomía.",
-              },
-              {
-                title: "Orientación para familias",
-                text: "Acompañamiento para mejorar cuidados, comunicación, toma de decisiones y adaptación a cambios asociados al envejecimiento.",
-              },
-              {
-                title: "Intervención y seguimiento",
-                text: "Diseño de estrategias y recomendaciones enfocadas en calidad de vida y envejecimiento saludable.",
-              },
-              {
-                title: "Capacitación profesional",
-                text: "Actualización y formación en gerontología, envejecimiento, trato digno y atención centrada en la persona.",
-              },
-              {
-                title: "Asesoría para centros",
-                text: "Diagnóstico y fortalecimiento de servicios para espacios orientados a personas adultas mayores.",
-              },
-              {
-                title: "Conferencias y talleres",
-                text: "Contenido accesible y basado en evidencia sobre envejecimiento, derechos y bienestar integral.",
-              },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="border border-neutral-200 rounded-3xl p-7 hover:shadow-xl transition"
-              >
-                <h3 className="text-xl font-semibold mb-4">{item.title}</h3>
-                <p className="text-neutral-600 leading-relaxed">{item.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* SOBRE MI */}
-      <section className="px-6 py-20 md:px-16 lg:px-24 bg-neutral-50">
-        <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <div className="aspect-square rounded-3xl bg-neutral-200 flex items-center justify-center text-neutral-500 text-lg">
               <img
-              src="/mmprof.png"
-              alt="Montserrat Muro"
-              className="aspect-square object-cover rounded-3xl shadow-xl"/>          
+                src="/mmprof.png"
+                alt="Montserrat Muro"
+                className="relative w-full h-[470px] object-cover object-center rounded-[2.2rem] shadow-[0_18px_40px_rgba(0,0,0,0.06)]"
+              />
+
             </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* ENFOQUE */}
+      <section className="px-6 py-24 md:px-14 lg:px-24 bg-[#EFE7DC]">
+
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-[0.9fr_1.1fr] gap-16">
+
+          <div>
+
+            <p className="uppercase tracking-[0.16em] text-[11px] text-[#8A847C] mb-5 font-medium">
+              Enfoque
+            </p>
+
+            <h2
+              className="text-[42px] md:text-[60px] leading-[1.14] tracking-[-0.02em]"
+              style={{
+                fontFamily: "Cormorant Garamond, serif",
+                fontWeight: 600,
+              }}
+            >
+              El envejecimiento también forma parte de cómo vivimos nuestros espacios, relaciones y comunidades.
+            </h2>
+
           </div>
 
           <div>
-            <h2 className="text-4xl font-bold mb-6">Sobre mí</h2>
 
-            <p className="text-neutral-700 leading-relaxed mb-5">
-              Soy Licenciada en Gerontología con formación en Derecho,
-              especializada en envejecimiento desde un enfoque biopsicosocial y basado en evidencia.
+            <p className="text-[17px] leading-[1.58] text-[#5B5751] mb-6">
+              Trabajo en orientación gerontológica, acompañamiento y proyectos
+              relacionados con bienestar, participación social y accesibilidad.
             </p>
 
-            <p className="text-neutral-700 leading-relaxed mb-5">
-              Me desempeño en investigación y desarrollo de iniciativas enfocadas en entornos inclusivos,
-              envejecimiento saludable y fortalecimiento de políticas y estrategias orientadas a personas mayores.
+            <p className="text-[17px] leading-[1.58] text-[#5B5751]">
+              Mi experiencia también se relaciona con iniciativas institucionales,
+              estrategias comunitarias y procesos enfocados en cultura de la longevidad
+              y entornos amigables.
             </p>
 
-            <p className="text-neutral-700 leading-relaxed">
-              Mi objetivo es acercar herramientas accesibles, humanas y profesionales que contribuyan al bienestar y calidad de vida durante el envejecimiento.
-            </p>
           </div>
+
         </div>
+
       </section>
 
-      {/* BENEFICIOS */}
-      <section className="px-6 py-20 md:px-16 lg:px-24">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-14">
-            <h2 className="text-4xl font-bold mb-4">
-              ¿Cómo puedo ayudarte?
+      {/* ÁREAS */}
+      <section
+        id="areas"
+        className="px-6 py-24 md:px-14 lg:px-24 bg-[#F5F1EB]"
+      >
+
+        <div className="max-w-7xl mx-auto">
+
+          <div className="max-w-3xl mb-16">
+
+            <p className="uppercase tracking-[0.16em] text-[11px] text-[#8A847C] mb-5 font-medium">
+              Áreas de trabajo
+            </p>
+
+            <h2
+              className="text-[42px] md:text-[60px] leading-[1.14] tracking-[-0.02em] mb-5"
+              style={{
+                fontFamily: "Cormorant Garamond, serif",
+                fontWeight: 600,
+              }}
+            >
+              Acompañamiento, proyectos y fortalecimiento institucional.
             </h2>
+
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              "Promover envejecimiento saludable",
-              "Fortalecer autonomía y bienestar",
-              "Brindar orientación profesional a familias",
-              "Mejorar calidad de atención en centros",
-            ].map((item, index) => (
+          <div className="grid md:grid-cols-3 gap-12">
+
+            {areas.map((item, index) => (
               <div
                 key={index}
-                className="bg-neutral-100 rounded-3xl p-6 text-center"
+                className="border-t border-[#D9D1C7] pt-6"
               >
-                <p className="font-medium leading-relaxed">{item}</p>
+
+                <h3
+                  className="text-[30px] leading-[1.18] tracking-[-0.015em] mb-5"
+                  style={{
+                    fontFamily: "Cormorant Garamond, serif",
+                    fontWeight: 600,
+                  }}
+                >
+                  {item.title}
+                </h3>
+
+                <p className="text-[#5B5751] text-[16px] leading-[1.55]">
+                  {item.text}
+                </p>
+
               </div>
             ))}
+
           </div>
+
         </div>
+
       </section>
 
-      {/* CTA */}
-      <section className="px-6 py-20 md:px-16 lg:px-24 bg-black text-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            Agenda una orientación gerontológica.
-          </h2>
+      {/* SOBRE MI TRABAJO */}
+      <section className="px-6 py-24 md:px-14 lg:px-24 bg-[#EFE7DC]">
 
-          <p className="text-neutral-300 text-lg mb-8 leading-relaxed">
-            Atención presencial y virtual para personas adultas mayores,
-            familias, instituciones y profesionales.
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-[1fr_0.85fr] gap-16 items-start">
+
+          <div>
+
+            <p className="uppercase tracking-[0.16em] text-[11px] text-[#8A847C] mb-5 font-medium">
+              Sobre mi trabajo
+            </p>
+
+            <h2
+              className="text-[42px] md:text-[60px] leading-[1.14] tracking-[-0.02em] mb-8"
+              style={{
+                fontFamily: "Cormorant Garamond, serif",
+                fontWeight: 600,
+              }}
+            >
+              Una práctica profesional vinculada con bienestar, participación y accesibilidad.
+            </h2>
+
+            <p className="text-[17px] leading-[1.58] text-[#5B5751] mb-6">
+              Soy Licenciada en Gerontología con formación en Derecho.
+            </p>
+
+            <p className="text-[17px] leading-[1.58] text-[#5B5751] mb-6">
+              Mi experiencia se desarrolla en acompañamiento individual,
+              orientación gerontológica, formación y proyectos relacionados
+              con envejecimiento, bienestar y participación social.
+            </p>
+
+            <p className="text-[17px] leading-[1.58] text-[#5B5751]">
+              También colaboro en iniciativas institucionales y comunitarias
+              enfocadas en accesibilidad, entornos amigables,
+              cultura de la longevidad y estrategias para una sociedad más inclusiva.
+            </p>
+
+          </div>
+
+          <div>
+
+            <div className="grid grid-cols-1 gap-4">
+
+              {topics.map((item, index) => (
+                <div
+                  key={index}
+                  className="border-b border-[#D9D1C7] pb-4"
+                >
+                  <p className="text-[16px] text-[#5B5751] leading-[1.5]">
+                    {item}
+                  </p>
+                </div>
+              ))}
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* ACOMPAÑAMIENTO */}
+      <section className="px-6 py-24 md:px-14 lg:px-24 bg-[#F5F1EB]">
+
+        <div className="max-w-5xl mx-auto text-center">
+
+          <p className="uppercase tracking-[0.16em] text-[11px] text-[#8A847C] mb-5 font-medium">
+            Acompañamiento
           </p>
 
-          <div className="flex flex-wrap justify-center gap-4">
+          <h2
+            className="text-[42px] md:text-[60px] leading-[1.14] tracking-[-0.02em] mb-8"
+            style={{
+              fontFamily: "Cormorant Garamond, serif",
+              fontWeight: 600,
+            }}
+          >
+            Orientación y acompañamiento para personas y familias.
+          </h2>
+
+          <p className="text-[17px] leading-[1.58] text-[#5B5751] max-w-3xl mx-auto mb-10">
+            Espacios de orientación enfocados en bienestar, envejecimiento,
+            autonomía y acompañamiento para personas mayores, familias
+            y procesos relacionados con calidad de vida.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-3">
+
+            <a
+              href="#contacto"
+              className="bg-[#5E6B57] text-white px-8 py-4 rounded-full text-[14px] font-medium tracking-wide transition hover:opacity-90"
+            >
+              Solicitar información
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* CONTACTO */}
+      <section
+        id="contacto"
+        className="px-6 py-24 md:px-14 lg:px-24 bg-[#5E6B57] text-white"
+      >
+
+        <div className="max-w-4xl mx-auto text-center">
+
+          <p className="uppercase tracking-[0.16em] text-[11px] opacity-80 mb-5 font-medium">
+            Contacto
+          </p>
+
+          <h2
+            className="text-[44px] md:text-[62px] leading-[1.14] tracking-[-0.02em] mb-8"
+            style={{
+              fontFamily: "Cormorant Garamond, serif",
+              fontWeight: 600,
+            }}
+          >
+            Construyamos conversaciones sobre bienestar y envejecimiento.
+          </h2>
+
+          <p className="text-[17px] leading-[1.55] text-[#E5E2DD] max-w-2xl mx-auto mb-10">
+            Atención presencial y virtual para orientación gerontológica,
+            acompañamiento, formación y proyectos relacionados con envejecimiento y participación.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-3 mb-12">
+
             <a
               href="https://wa.me/523332547567"
-              className="bg-white text-black px-7 py-3 rounded-2xl font-medium hover:opacity-90 transition"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-[#5E6B57] px-8 py-4 rounded-full text-[14px] font-medium tracking-wide transition hover:opacity-90"
             >
-              Contactar por WhatsApp
+              WhatsApp
             </a>
 
             <a
               href="mailto:yeseniagomezmm@gmail.com"
-              className="border border-white px-7 py-3 rounded-2xl font-medium hover:bg-white hover:text-black transition"
+              className="border border-white px-8 py-4 rounded-full text-[14px] font-medium tracking-wide transition hover:bg-white hover:text-[#5E6B57]"
             >
-              Enviar correo
+              Correo electrónico
             </a>
+
           </div>
+
+          <div className="flex justify-center gap-6 text-[15px] text-[#E5E2DD]">
+
+            <a
+              href="https://www.instagram.com/muro_montserrat/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-80 transition"
+            >
+              Instagram
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/montserrat-muro-704b3133b/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-80 transition"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              href="https://wa.me/523332547567"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:opacity-80 transition"
+            >
+              WhatsApp
+            </a>
+
+          </div>
+
         </div>
+
       </section>
 
       {/* FOOTER */}
-      <footer className="px-6 py-8 md:px-16 lg:px-24 border-t border-neutral-200">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-4 text-sm text-neutral-500">
+      <footer className="px-6 py-8 md:px-14 lg:px-24 bg-[#F5F1EB] border-t border-[#DDD5CA]">
+
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-4 text-[14px] text-[#8A847C]">
+
           <p>
-            © 2026 Montserrat Muro · Gerontología y envejecimiento saludable.
+            © 2026 Montserrat Muro · Gerontología y bienestar.
           </p>
 
-          <div className="flex gap-5">
-            <a 
-    href="https://www.instagram.com/muro_montserrat/" 
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Instagram
-  </a>
+          <p>
+            Monterrey, Nuevo León · México
+          </p>
 
-  <a 
-    href="https://www.linkedin.com/in/montserrat-muro-704b3133b/" 
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    LinkedIn
-  </a>
-
-  <a 
-    href="https://wa.me/523332547567" 
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    WhatsApp
-  </a>
-          </div>
         </div>
-     </footer>
-    </div>
+
+      </footer>
+
+    </main>
   );
 }

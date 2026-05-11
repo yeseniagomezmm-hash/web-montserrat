@@ -33,7 +33,7 @@ export default function Page() {
 
         <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.1fr_0.9fr] gap-14 lg:gap-20 items-center">
 
-          {/* CONTENIDO */}
+          {/* TEXTO */}
           <div className="max-w-3xl">
 
             <p className="uppercase tracking-[0.16em] text-[11px] text-[#8A847C] mb-7 font-medium">
@@ -79,16 +79,16 @@ export default function Page() {
           </div>
 
           {/* FOTO */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-end lg:pr-6">
 
-            <div className="relative w-[290px] md:w-[360px]">
+            <div className="relative w-[240px] md:w-[290px] lg:w-[300px]">
 
-              <div className="absolute inset-0 bg-[#E7DED3] rounded-[2.2rem] translate-x-4 translate-y-4"></div>
+              <div className="absolute inset-0 bg-[#E7DED3] rounded-[2rem] translate-x-4 translate-y-4"></div>
 
               <img
                 src="/mmprof.png"
                 alt="Montserrat Muro"
-                className="relative w-full h-[470px] object-cover object-center rounded-[2.2rem] shadow-[0_18px_40px_rgba(0,0,0,0.06)]"
+                className="relative w-full h-[390px] md:h-[430px] object-cover object-[center_top] rounded-[2rem] shadow-[0_18px_40px_rgba(0,0,0,0.06)]"
               />
 
             </div>

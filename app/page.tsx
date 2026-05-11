@@ -81,14 +81,14 @@ export default function Page() {
           {/* FOTO */}
           <div className="hidden lg:flex justify-end pr-4">
 
-            <div className="relative w-[160px]">
+            <div className="relative w-[240px] md:w-[280px]">
 
-              <div className="absolute inset-0 bg-[#E7DED3] rounded-[1.5rem] translate-x-3 translate-y-3"></div>
+              <div className="absolute inset-0 bg-[#E7DED3] rounded-[1.7rem] translate-x-4 translate-y-4"></div>
 
               <img
                 src="/mmprof.png"
                 alt="Montserrat Muro"
-                className="relative w-full h-[235px] object-cover object-[center_top] rounded-[1.5rem] shadow-[0_8px_20px_rgba(0,0,0,0.04)]"
+                className="relative w-full h-[360px] md:h-[420px] object-cover object-[center_top] rounded-[1.7rem] shadow-[0_10px_24px_rgba(0,0,0,0.05)]"
               />
 
             </div>

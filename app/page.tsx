@@ -117,7 +117,7 @@ export default function Page() {
                 fontWeight: 600,
               }}
             >
-              El bienestar también forma parte de cómo vivimos nuestros espacios, relaciones y comunidades.
+              Bienestar, participación y accesibilidad para una sociedad longeva.
             </h2>
 
           </div>

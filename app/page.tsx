@@ -47,15 +47,15 @@ export default function Page() {
                 fontWeight: 600,
               }}
             >
-              Envejecimiento,
+              Bienestar,
               <br />
-              bienestar y participación.
+              participación y longevidad.
             </h1>
 
             <p className="text-[21px] leading-[1.5] text-[#5B5751] max-w-[760px] mb-14">
               Gerontología, orientación y acompañamiento para personas,
-              familias y proyectos enfocados en bienestar, accesibilidad
-              y participación.
+              familias y proyectos relacionados con bienestar,
+              accesibilidad y comunidad.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -117,7 +117,7 @@ export default function Page() {
                 fontWeight: 600,
               }}
             >
-              El envejecimiento también forma parte de cómo vivimos nuestros espacios, relaciones y comunidades.
+              El bienestar también forma parte de cómo vivimos nuestros espacios, relaciones y comunidades.
             </h2>
 
           </div>
@@ -226,7 +226,7 @@ export default function Page() {
             <p className="text-[18px] leading-[1.55] text-[#5B5751] mb-6">
               Mi experiencia se desarrolla en acompañamiento individual,
               orientación gerontológica, formación y proyectos relacionados
-              con envejecimiento, bienestar y participación social.
+              con bienestar y participación social.
             </p>
 
             <p className="text-[18px] leading-[1.55] text-[#5B5751]">
@@ -280,8 +280,8 @@ export default function Page() {
           </h2>
 
           <p className="text-[18px] leading-[1.55] text-[#5B5751] max-w-3xl mx-auto mb-10">
-            Espacios de orientación enfocados en bienestar, envejecimiento,
-            autonomía y acompañamiento para personas mayores, familias
+            Espacios de orientación enfocados en bienestar, autonomía
+            y acompañamiento para personas mayores, familias
             y procesos relacionados con calidad de vida.
           </p>
 
@@ -319,18 +319,18 @@ export default function Page() {
               fontWeight: 600,
             }}
           >
-            Construyamos conversaciones sobre bienestar y envejecimiento.
+            Construyamos espacios más accesibles y humanos.
           </h2>
 
           <p className="text-[18px] leading-[1.5] text-[#E5E2DD] max-w-2xl mx-auto mb-12">
             Atención presencial y virtual para orientación gerontológica,
-            acompañamiento, formación y proyectos relacionados con envejecimiento y participación.
+            acompañamiento, formación y proyectos relacionados con bienestar y participación.
           </p>
 
           <div className="flex flex-wrap justify-center gap-3 mb-12">
 
             <a
-              href="https://wa.me/523332547567"
+              href="https://wa.me/528119782049"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-[#5E6B57] px-9 py-4 rounded-full text-[15px] font-medium tracking-wide transition hover:opacity-90"
@@ -368,7 +368,7 @@ export default function Page() {
             </a>
 
             <a
-              href="https://wa.me/523332547567"
+              href="https://wa.me/528119782049"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:opacity-80 transition"

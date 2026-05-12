@@ -47,9 +47,9 @@ export default function Page() {
                 fontWeight: 600,
               }}
             >
-              Bienestar,
+              Envejecimiento,
               <br />
-              participación y longevidad.
+              bienestar y participación.
             </h1>
 
             <p className="text-[21px] leading-[1.5] text-[#5B5751] max-w-[760px] mb-14">
@@ -117,7 +117,7 @@ export default function Page() {
                 fontWeight: 600,
               }}
             >
-              Bienestar, participación y accesibilidad para una sociedad longeva.
+              Participación, bienestar y entornos más accesibles.
             </h2>
 
           </div>
@@ -216,7 +216,7 @@ export default function Page() {
                 fontWeight: 600,
               }}
             >
-              Una práctica profesional vinculada con bienestar, participación y accesibilidad.
+              Gerontología, acompañamiento y proyectos para entornos más accesibles.
             </h2>
 
             <p className="text-[18px] leading-[1.55] text-[#5B5751] mb-6">
@@ -319,7 +319,7 @@ export default function Page() {
               fontWeight: 600,
             }}
           >
-            Construyamos espacios más accesibles y humanos.
+            Conversemos sobre bienestar, participación y accesibilidad.
           </h2>
 
           <p className="text-[18px] leading-[1.5] text-[#E5E2DD] max-w-2xl mx-auto mb-12">
